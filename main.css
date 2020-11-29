@@ -1,0 +1,453 @@
+body{
+	font-size: 16px;
+	overflow-x: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+nav{
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	//position: fixed;
+	//width:100%;
+	//z-index:2;
+	//box-shadow: 0px 2px #ddd;
+}
+.nav-right{
+	float: right;
+	//display: flex;
+	//justify-content: space-evenly;
+	width: 50%;
+}
+
+.menu{
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	//font-weight: bold;
+}
+
+.menu a{
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 14px;
+	color: black;
+}
+
+.brand{
+	margin-left: 5%;
+	color: #2f2f2f;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+
+.burger{
+	display: none;
+}
+
+
+.burger div{
+	width: 24px;
+	height: 2px;
+	background-color: black;
+	margin-bottom: 6px;
+}
+
+
+.sideBar{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.main{
+	background-image: url('main.jpg');
+	width: 100%;
+	overflow-x: hidden;
+	height: 614px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 0px;
+}
+
+.com-type{
+	font-weight: bold;
+	font-size: 2em;
+}
+
+#logo{
+	width: 40%; 
+	height: 23.75%;
+}
+#com-type-m{
+	display: none;
+}
+
+.outer{
+	width: 100%;
+	height: 33.3%;
+	display: flex;
+	flex-direction: column;
+}
+
+#interested{
+	width: 33.3%;
+	height: 100%;
+	background-color: #E23A3A;
+	align-self: flex-end;
+	color: black;
+}
+
+#know-more{
+	width: 33.3%;
+	height: 100%;
+	background-color: black;
+	align-self: center;
+	color: white;
+}
+
+.sec-link{
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.main-block{
+	font-size: 16px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.icon{
+	margin-left: 10px;
+}
+
+#product-list{
+	display:flex;
+	overflow-x: auto;
+	overflow-y: hidden;
+	//justify-content: space-evenly;
+	//flex-wrap: wrap;
+}
+
+.product{
+	min-width:200px;
+	height: 300px;
+	border-radius: 200px;
+	margin: 20px;
+}
+.container-round{
+	width: 200px;
+	height: 200px;
+	border-radius: 200px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.product-name{
+	text-align: center;
+	font-size: 1.5em;
+	color: white;
+	font-weight: bold;
+}
+
+.prod-img{
+	width: 160px;
+}
+#products{
+	background-color: #E23A3A;
+	height: 50%;
+	margin-top: 50px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#product-text{
+	position: relative;
+	text-align: center;
+	font-weight: bold;
+	font-size: 2em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	top: 70px;
+}
+
+::-webkit-scrollbar{
+	height: 5px;
+	width: 2px;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #ddd;
+	border-radius: 20px;
+}
+
+#contact{
+	background-color: #414141;
+	padding: 5%;
+	padding-bottom: 10%;
+	padding-left: 10%;
+}
+
+#heading{
+	color:white;
+	font-size: 4em;
+}
+#sub-heading{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sub-header{
+	color: rgba(255,73,73,0.5);
+	font-size: 4em;
+	font-family: "Times New Roman";
+	margin-left: 100px;
+}
+
+#contact-description{
+	color: #06E2F3;
+	display: flex;
+	align-items: center;
+	padding-left: 2%;
+}
+
+.contact-header{
+	color: #06E2F3;
+	font-size: 1em;
+}
+
+.contact-block{
+	background-color: black;
+	width: 60%;
+	margin-bottom: 5px;
+	padding: 10px;
+	font-size: 1em;
+}
+
+.contact-details{
+	color: white;
+	font-size: 0.7em;
+}
+.contact-icon{
+	width: 24px;
+	height: 24px;
+	color: #06E2F3;
+}
+#contact-container{
+	margin-top: 5%;
+}
+ul{
+	list-style-type: none;
+}
+
+#social-accounts{
+	margin-top: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+#social-accounts .line{
+	background-color: white;
+}
+
+
+#social-accounts div a{
+	color: white;
+	border: 3px solid white;
+	height: 30px;
+	width: 30px;
+	border-radius: 24px;
+	text-align: center;
+	padding-top: 3px;
+	text-decoration: none;
+}
+.con-type{
+	margin-left: 10px;
+}
+
+
+@media only screen and (min-width:768px){
+#about{
+	margin-left: 5%;
+	margin-right: 10%; 
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	height: 80%;
+	align-items: center;
+}
+
+.about-header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+	text-transform: uppercase;
+}
+
+.line{
+	display: inline-block;
+	background-color: black;
+	width: 100px;
+	height: 1px;
+}
+.logo-container{
+	width: 50%; 
+	height: 20%;
+	display: flex;
+	justify-content: center;
+}
+.logo-img{
+	width:25%;
+	height: 100%;
+}
+
+.abt-com{
+	text-align: center;
+	font-weight: bold;
+}
+
+#cmpny-values{
+	display: flex;
+}
+
+.about-text{
+	position: relative;
+	text-transform: uppercase;
+	letter-spacing: 20px;
+	font-size: 2.5em;
+	font-weight: bold;
+	color: rgba(139,147,147,0.4);
+	transform: rotate(90deg);
+	z-index: 2;
+	width: 30%;
+	left: 80%;
+	top: 50%;
+}
+
+#cmpny-values p{
+	margin: 50px;
+}
+
+}
+
+@media only screen and (max-width: 768px){
+	.menu{
+		display: none;
+	}
+	
+	.menu-m{
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 60%;
+		height: 100%;
+		z-index: 1;
+		right:-5%;
+		top:5%;
+		background-color: #E23A3A;
+		font-weight: bold;
+	}
+	
+	.burger{
+		display: inline;
+		float: right;
+		margin-right: 10%
+	}
+	
+	#com-tag-d{
+		display: none
+	}
+	
+	#com-type-m{
+		position: relative;
+		display: block;
+		text-transform: uppercase;
+		font-size: 2.5em;
+		font-weight: bold;
+		top: 25px;
+		left: 20px;
+		color: rgba(139,147,147,0.4);
+	}
+	
+	#logo{
+	width: 50%; 
+	height: 90%;
+	}
+	
+	.sideBar{
+		padding: 20px;
+	}
+	
+	#about{
+		height: 90%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		margin: 5%;
+		margin-top: 0
+	}
+
+	.about-header{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width:100%;
+		text-transform: uppercase;
+	}
+
+	.line{
+		display: inline-block;
+		height: 1px;
+		width: 100px;
+		background-color: black;
+	}
+	.logo-container{
+		width: 50%;
+	}
+	.logo-img{
+		width:100%;
+	}
+
+	.abt-com{
+		font-weight: bold;
+	}
+
+	.about-text{
+		position: relative;
+		text-transform: uppercase;
+		letter-spacing: 20px;
+		font-size: 3em;
+		font-weight: bold;
+		color: rgba(139,147,147,0.4);
+		transform: rotate(90deg);
+		z-index: 2;
+		left: 45%;
+		top: 60%;
+		
+	}
+
+	#cmpny-values p{
+		font-size: 0.8em;
+	}
+
+
+}
