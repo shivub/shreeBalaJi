@@ -9,15 +9,9 @@ nav{
 	background-color: white;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	/* //position: fixed;
-	//width:100%;
-	//z-index:2;
-	//box-shadow: 0px 2px #ddd; */
 }
 .nav-right{
 	float: right;
-	/* //display: flex;
-	//justify-content: space-evenly; */
 	width: 50%;
 }
 
@@ -25,7 +19,6 @@ nav{
 	display: flex;
 	justify-content: space-evenly;
 	width: 100%;
-	/* //font-weight: bold; */
 }
 
 .menu a{
@@ -81,7 +74,7 @@ nav{
 
 #logo{
 	width: 40%; 
-	height: 23.75%;
+	height: auto;
 }
 #com-type-m{
 	display: none;
@@ -131,8 +124,6 @@ nav{
 	display:flex;
 	overflow-x: auto;
 	overflow-y: hidden;
-	/* //justify-content: space-evenly;
-	//flex-wrap: wrap; */
 }
 
 .product{
@@ -162,7 +153,6 @@ nav{
 }
 #products{
 	background-color: #E23A3A;
-	height: 50%;
 	margin-top: 50px;
 	overflow-x: auto;
 	overflow-y: hidden;
@@ -283,15 +273,20 @@ ul{
 }
 
 
-@media only screen and (min-width:768px){
-#about{
+@media only screen and (min-width:766px){
+.about-content{
 	margin-left: 5%;
 	margin-right: 10%; 
 	display: flex;
 	justify-content: space-evenly;
 	flex-direction: column;
-	height: 80%;
 	align-items: center;
+}
+
+#about{
+	display: grid;
+	grid-template-columns: 10fr 1fr;
+	padding: 5%;
 }
 
 .about-header{
@@ -329,17 +324,17 @@ ul{
 }
 
 .about-text{
-	position: relative;
 	text-transform: uppercase;
 	letter-spacing: 20px;
 	font-size: 2.5em;
 	font-weight: bold;
 	color: rgba(139,147,147,0.4);
-	transform: rotate(90deg);
-	z-index: 2;
-	width: 30%;
-	left: 80%;
-	top: 50%;
+	writing-mode: vertical-lr;
+	/* transform: rotate(0deg); */
+	/* z-index: 2;
+	width: 50%;
+	left: 70%;
+	top: 70%; */
 }
 
 #cmpny-values p{
@@ -348,7 +343,11 @@ ul{
 
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 766px){
+
+	.about-text{
+		display: none;
+	}
 	.menu{
 		display: none;
 	}
@@ -363,14 +362,18 @@ ul{
 		height: 100%;
 		z-index: 1;
 		right:-5%;
-		top:5%;
+		top:9%;
 		background-color: #E23A3A;
 		font-weight: bold;
+	}
+
+	.nav-right{
+		width: auto;
 	}
 	
 	.burger{
 		display: inline;
-		margin-right: 10%
+		margin-right: 10%;
 	}
 	
 	#com-tag-d{
@@ -397,14 +400,17 @@ ul{
 		padding: 20px;
 	}
 	
-	#about{
-		height: 90%;
+	.about-content{
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
 		align-items: center;
 		margin: 5%;
 		margin-top: 0
+	}
+
+	#about{
+		padding: 2%;
 	}
 
 	.about-header{
